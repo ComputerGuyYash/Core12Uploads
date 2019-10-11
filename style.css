@@ -12,7 +12,8 @@ body{
   background-color: rgba(255,255,255,0.4);
   width: 100%;
   min-height: 50px;
-  filter: blur(0.2px);
+  filter: blur(0.10px);
+  z-index:2000;
 }
 .items{
   margin-right: 2px;
@@ -38,8 +39,121 @@ body{
   width: 100%;
 }
 .slide1{
-  background-color: d95b61;
+  height: 200%;
+  background-color: 282626;
+  overflow: hidden;
 }
 .slide2{
-  background-color: 282626;
+  width: calc(100% - 200px);
+  padding: 100px;
+  background-color: white;
+}
+.slide3{
+  border-top: 5px solid #1c110f;
+  background-color: white;
+  max-height: 100%;
+}
+.slider{
+  transform: rotate(-30deg) translateX(200px) translateY(-230px);
+  width: 60%;
+  height: 180%;
+  background-color: d95b61;
+}
+.content{
+  transform: rotate(30deg) translateX(600px) translateY(300px);
+}
+.logo{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.con-2{
+  transform: translateY(300px);
+}
+.bft{
+  transform:  translateX(100px);
+  width: fit-content;
+  padding: 2px;
+  font-size: 50px;
+  border-color: white;
+  color: white;
+  border-width: 2px;
+  border-style: solid;
+}
+.bft.prophet{
+  transform:  translateX(0px);
+  color:d93b43;
+  border-color: d93b43;
+}
+p.MOTIVE{
+  font-size: 20px;
+  line-height: 1.3em;
+  transform: translateX(-87px);
+  text-align: center;
+  width: 90%;
+  color: white;
+}
+.doraemaan{
+  padding: 20px;
+  margin: 2px;
+  width: calc(100% - 22px);
+  border-color: d93b43;
+  color: d93b43;
+  border-style: solid;
+  max-height: 200px;
+}
+.space{
+  display: inline-block;
+  width: 49%;
+  max-height: 100%;
+  vertical-align: top;
+}
+h1{
+  font-size: 50px;
+  margin: 0px;
+  padding: 0;
+}
+p.dora{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+p.dora.iner{
+  font-weight: 300;
+  width: 80%;
+  font-size: 30px;
+  text-align: center;
+  padding: 0;
+  padding-top: 30px;
+  margin: 0;
+}
+lspace{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  height: 30%;
+}
+img.fitter{
+  height: calc(50% - 100px);
+}
+.side{
+  vertical-align: top;
+  width: 49%;
+  height: 100%;
+  display: inline-block;
+}
+.side1{
+  background-color: d95b61;
+  color: white;
+}
+.side2{
+  background-color: white;
+  color: d95b61;
+}
+.CC{
+  margin-top: 300px;
+  margin-left: 100px;
 }
