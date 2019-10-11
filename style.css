@@ -14,6 +14,7 @@ body{
   min-height: 50px;
   filter: blur(0.10px);
   z-index:2000;
+  border-bottom: black 2px solid;
 }
 .items{
   margin-right: 2px;
@@ -49,18 +50,23 @@ body{
   background-color: white;
 }
 .slide3{
+  overflow: hidden;
   border-top: 5px solid #1c110f;
   background-color: white;
   max-height: 100%;
 }
+.slide4{
+  background-color: 282626;
+  height: 50%;
+}
 .slider{
-  transform: rotate(-30deg) translateX(200px) translateY(-230px);
+  transform: rotate(-30deg) translateX(600px) translateY(-100px);
   width: 60%;
   height: 180%;
   background-color: d95b61;
 }
 .content{
-  transform: rotate(30deg) translateX(600px) translateY(300px);
+  transform: rotate(30deg) translateX(500px) translateY(400px);
 }
 .logo{
   height: 200px;
@@ -69,7 +75,7 @@ body{
   background-color: rgba(255, 255, 255, 0.5);
 }
 .con-2{
-  transform: translateY(300px);
+  transform: translateY(330px) translateX(100px);
 }
 .bft{
   transform:  translateX(100px);
@@ -137,9 +143,10 @@ lspace{
   height: 30%;
 }
 img.fitter{
-  height: calc(50% - 100px);
+  height: calc(50% - 125px);
 }
 .side{
+  overflow: hidden;
   vertical-align: top;
   width: 49%;
   height: 100%;
@@ -155,5 +162,30 @@ img.fitter{
 }
 .CC{
   margin-top: 300px;
-  margin-left: 100px;
+  text-align: center;
+}
+.bar1{
+
+  width: 100%;
+  height: 50%;
+  overflow-x: scroll;
+  width: 200%;
+  display: flex;
+  align-items: stretch;
+  align-content: space-between;
+  justify-content: flex-start;
+}
+.img{
+  vertical-align: top;
+  display: inline-block;
+  border-radius: 2px;
+  border: 10px rgb(20,20,20) solid;
+  width: 20%;
+  height: calc(100% - 20px);
+  background-image: url("img/1.jpg");
+}
+.filter{
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.6) 90%, rgba(0,0,0,0.8) 99%);
 }
