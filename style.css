@@ -9,9 +9,10 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: rgba(255,255,255,0.4);
   width: 100%;
   min-height: 50px;
+  filter: blur(0.2px);
 }
 .items{
   margin-right: 2px;
