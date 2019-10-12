@@ -17,6 +17,7 @@ body{
   border-bottom: black 2px solid;
 }
 .items{
+  font-weight: 500;
   margin-right: 2px;
   border-radius: 2px;
   cursor: pointer;
@@ -29,8 +30,10 @@ body{
   display: inline-block;
   min-width: 50px;
   height:80%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-bottom: 2px;
 }
 .items:hover{
   background-color: #F3fAff;
@@ -45,6 +48,7 @@ body{
   overflow: hidden;
 }
 .slide2{
+  height: 280%;
   overflow: hidden;
   width: calc(100% - 200px);
   padding: 100px;
@@ -67,16 +71,17 @@ body{
   background-color: d95b61;
 }
 .content{
-  transform: rotate(30deg) translateX(500px) translateY(400px);
+  transform: rotate(30deg) translateX(400px) translateY(400px);
 }
 .logo{
-  height: 200px;
-  width: 200px;
+  background-image: url('img/logo2.png');
+  background-size: contain;
+  height: 300px;
+  width: 300px;
   border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 .con-2{
-  transform: translateY(330px) translateX(100px);
+  transform: translateY(330px) translateX(200px);
 }
 .bft{
   transform:  translateX(100px);
@@ -108,12 +113,11 @@ p.MOTIVE{
   border-color: d93b43;
   color: d93b43;
   border-style: solid;
-  max-height: 200px;
+  max-height: 350px;
 }
 .space{
   display: inline-block;
   width: 49%;
-  max-height: 100%;
   vertical-align: top;
 }
 h1{
@@ -141,10 +145,12 @@ lspace{
   align-content: center;
   justify-content: center;
 
-  height: 30%;
+  height: 15%;
 }
 img.fitter{
-  height: calc(50% - 125px);
+
+  float: left;
+  height: auto !important;
 }
 .side{
   overflow: hidden;
@@ -190,4 +196,63 @@ img.fitter{
   height: 100%;
   width: 100%;
   background-image: radial-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.6) 90%, rgba(0,0,0,0.8) 99%);
+}
+.show1{
+  background-image: url('img/map.png');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  height: 80%;
+  background-attachment: fixed;
+  width: 100%;
+}
+.show2{
+  overflow: hidden;
+  background-image: url('img/download.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80%;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+h3.rev{
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.filter2{
+color: d93b43;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,200,10,0.2)
+}
+h3.reva{
+  font-weight: inherit;
+}
+
+.filter3{
+
+  background-color: rgba(0,10,20,0.7);
+  filter: blur(0.1px);
+  color:#F7F7F7;
+  font-weight: 100;
+  height: 100%;
+  width: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-image: url('img/shop/ak47.png');
+}
+.slide6{
+  margin-top: 400px;
+  height: 30%;
+}
+h3.revi{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  font-weight: 100;
 }

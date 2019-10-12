@@ -17,14 +17,21 @@ $(document).ready(function() {
 });
 var x = 300;
 $(window).scroll(function () {
+
   var height = innerHeight;
   wScroll=$(this).scrollTop();
+  $('.img').each(function(){
+
+    $(this).css('transform','translateY('+(((wScroll-($(this).offset().top))/5)+0)+'px)');
+
+  })
+  $('.text').each(function () {
+    $(this).css('transform','translateY('+(((wScroll-($(this).offset().top))/2)+0)+'px)');
+  })
   $('.card').css('transform','translateY('+(((wScroll-($('.card').offset().top))/1.2))+'px)')
   $('img').css('transform','translateY('+(((wScroll-($('.card').offset().top))/10))+'px)')
   $('.navbar').css('background-color','rgba(255,255,255,'+wScroll/(height)+')');
   $('.navbar').css('border-color','rgba(0,0,0,'+wScroll/(height)+')');
-  $('.fob').css('border-color','rgba(0,0,0,'+wScroll/(height)+')');
-  $('.fob').css('background-color','rgba(217,59,67,'+wScroll/(height)+')');
 if(wScroll<(height/1.2)){
   $('set').css('font-size',(190*(1-(wScroll/(height))))+'px');
 }  //$('set').css('font-size',(190*(1-(wScroll/(height))))+'px');
